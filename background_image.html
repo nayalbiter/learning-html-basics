@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale = 1">
+    <title> Full Background image </title>
+    <style>
+        html {
+            background: url(../images/full_background.jpg) no-repeat center center fixed;
+            background-size: cover;
+            background-color: salmon;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #wrapper {
+            height: 100vh;
+            /*vh = view port height*/
+            background-color: rgba(255, 255, 255, .50);
+            /*border: solid 2px blue; */
+            /* use this for transparency instead of opacity */
+        }
+
+        #hero {
+            background: url(../images/flowers.jpg) no-repeat center center fixed;
+            height: 200px;
+            background-size: cover;
+            position: relative;
+            border: solid 2px red;
+
+        }
+
+        blockquote {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 2.5em;
+            width: 350px;
+            position: absolute;
+            top: 100px;
+            right: 0;
+            background-color: rgba(175, 175, 175, 1);
+            border-radius: 20px 10px 30px 0;
+            padding: 20px;
+            box-shadow: 15px -10px 20px 10px rgba(0, 0, 0, 1); /*inset is used to put the shadow inside the box*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>CSS Full Background</h1>
+        </header>
+
+        <div id="hero">
+            <blockquote>
+                A paragraph is a self-contained unit of discourse in writing dealing with a particular point or idea.
+            </blockquote>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
