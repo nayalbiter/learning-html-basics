@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale = 1">
+    <title> CSS Backgrounds </title>
+    <style>
+        body {
+
+            /* background-color: rgba(3, 159, 100, .5); */
+            /*background: radial-gradient(rgba(2, 0, 36, 1)0%, rgba(25, 100, 100, 1) 35%, rgba(200, 150, 136, 1) 100%); did not work properly*/
+
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1), rgba(25, 100, 100, 1), rgba(200, 150, 136, 1));
+            /*to combine colors*/
+
+            height: 2000px;
+
+            background-image: url("../images/gif.gif"), url("../images/background.jpg");
+            background-repeat: no-repeat, repeat;
+            background-position: right, bottom;
+            background-attachment: scroll, fixed;
+            background-size: 500px, 500px;
+
+           /* background-image: url("../images/background.jpg");
+            background-repeat: no-repeat;
+            /*repeat-y repeat vertically and repeat-x horizontally
+            background-position: 25px 200px;
+            background-attachment: scroll; 
+
+            /*   background: rgb(255, 145, 255) url("../images/background1.webp") no-repeat fixed 25px 200px: to add everything in one line. use this order*/
+        }
+
+
+
+        .myGradient {
+            background-image: linear-gradient(red, yellow, green);
+            height: 50px;
+            display: none;
+            /*to hide something*/
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CSS Backgrounds</h1>
+    </header>
+    <div class="myGradient">
+        <h1>Hello Gradient</h1>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
