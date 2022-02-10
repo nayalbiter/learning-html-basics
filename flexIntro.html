@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale = 1">
+    <title> Intro to Flex </title>
+    <style>
+        .FlexParent {
+            background-color: rgb(25, 100, 255);
+            border: solid 2px rgb(0, 0, 0);
+            display: flex;
+            /* flex-direction:
+                /*column-reverse*/
+            /*column*/
+            /*column-reverse*/
+            /*row*/
+            /*row-reverse*/
+            ;
+            /*flex-wrap: wrap
+                /*wrap-reverse;*/
+            height: 400px;
+            flex-flow: row wrap;
+            justify-content:
+                /*center*/
+                /*flex-start*/
+                /*flex-end*/
+                /*space-around*/
+                space-between;
+            align-items:
+                /*baseline*/
+                /*flex-start*/
+                center;
+            align-content:
+                /*space-between*/
+                center;
+            row-gap: 30px;
+            column-gap: 30px;
+
+        }
+
+        div.FlexParent div {
+            background-color: rgb(255, 255, 0);
+            margin: 10px;
+            padding: 10px;
+            font-size: 28px;
+            width: 200px;
+        }
+
+        .perfectCenter {
+            border: solid 3px black;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            /*horizontally align items*/
+            align-items: center;
+            /*vertically align items*/
+
+            /*align-content changes behavior of flex wrap property*/
+        }
+
+        div.FlexParent div:nth-child(4) {
+            color: red;
+            /* order: 8;*/
+            flex-grow: 10;
+        }
+
+
+        div.FlexParent div:nth-child(6) {
+            color: red;
+            /*order: 12;*/
+            flex-grow: 9;
+        }
+
+        div.FlexParent div:nth-child(3) {
+            color: red;
+            /*order: 12;*/
+            flex-shrink: 6;
+        }
+
+        nav {
+
+        }
+
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            background-color: aqua;
+            padding: 20px;
+            column-gap: 10px;
+            justify-content: center;
+        }
+
+        nav ul li{
+            width: 200px;
+            background-color: bisque;
+            color: black;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            CSS Flex
+        </h1>
+        <nav>
+            <ul>
+                <li>link 1</li>
+                
+                <li>link 2</li>
+                
+                <li>link 3</li>
+                
+                <li>link 4</li>
+                
+                <li>link 5</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="FlexParent">
+
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div>DIV 3</div>
+        <div>DIV 4</div>
+        <div>DIV 5</div>
+        <div>DIV 6</div>
+        <div>DIV 7</div>
+        <div>DIV 8</div>
+        <div>DIV 9</div>
+        <div>DIV 10</div>
+        <div>DIV 11</div>
+        <div>DIV 12</div>
+    </div>
+
+    <div class="perfectCenter">
+        <img src="../images/gif.gif" width="300" alt="gif">
+    </div>
+
+
+</body>
+
+</html>
