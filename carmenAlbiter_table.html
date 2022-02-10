@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale = 1">
+    <title> HTML Tables</title>
+    <style>
+        html {
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1), rgba(25, 100, 100, 1), rgba(200, 150, 136, 1));
+        }
+
+        header h1 {
+            background-color: sandybrown;
+            border: 5px dotted;
+            font-style: italic;
+
+        }
+
+        table {
+            border: double;
+            background-color: salmon;
+            position:absolute;
+        }
+
+        table,
+        th,
+        tr,
+        td {
+            border: solid black;
+        }
+
+        table thead th {
+            font-style: oblique;
+            font: bold 20px;
+
+        }
+
+        .title{
+            background-color: antiquewhite;
+            border:3px;
+            font: 10px
+        }
+
+        .country {
+            background-color: rgb(97, 212, 102);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Carmen Albiter - Table</h1>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="5">
+                        <img src="../images/int.jpg" alt="internet" width="150" />
+                    </th>
+                    <th colspan="8" class="title">Percentage of Individuals using the Internet</th>
+                </tr>
+
+                <tr>
+                    <th>2000</th>
+                    <th>2004</th>
+                    <th>2005</th>
+                    <th>2009</th>
+                    <th>2010</th>
+                    <th>2011</th>
+                    <th>2014</th>
+                    <th>2015</th>
+                </tr>
+            </thead>
+            <tr>
+                <td colspan="1" class="country">Australia</td>
+                <td>46.76</td>
+                <td> </td>
+                <td>63.00</td>
+                <td>74.25</td>
+                <td>76.00</td>
+                <td>79.49</td>
+                <td>84.00</td>
+                <td>84.56</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="country">Austria</td>
+                <td>33.73</td>
+                <td>54.28</td>
+                <td>58.00</td>
+                <td>73.45</td>
+                <td>75.17</td>
+                <td>78.74</td>
+                <td>81.00</td>
+                <td>83.93</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="country">Belarus</td>
+                <td>1.86</td>
+                <td> </td>
+                <td> </td>
+                <td>27.43</td>
+                <td>31.80</td>
+                <td>39.65</td>
+                <td>59.02</td>
+                <td>62.23</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="country">Belgium</td>
+                <td>29.43</td>
+                <td>53.86</td>
+                <td>55.82</td>
+                <td>70.00</td>
+                <td>75.00</td>
+                <td>81.61</td>
+                <td>85.00</td>
+                <td>85.05</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="country">Bulgaria</td>
+                <td>5.37</td>
+                <td>18.13</td>
+                <td>19.97</td>
+                <td>45.00</td>
+                <td>46.23</td>
+                <td>47.98</td>
+                <td>55.49</td>
+                <td>56.66</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="country">Congo (Rep.)</td>
+                <td>0.03</td>
+                <td>1.08</td>
+                <td>1.46</td>
+                <td>4.50</td>
+                <td>5.00</td>
+                <td>5.60</td>
+                <td>7.11</td>
+                <td>7.62</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="country">Costa Rica</td>
+                <td>5.80</td>
+                <td>20.79</td>
+                <td>22.07</td>
+                <td>34.33</td>
+                <td>36.50</td>
+                <td>39.21</td>
+                <td>53.00</td>
+                <td>59.76</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="country">France</td>
+                <td>14.31</td>
+                <td>39.15</td>
+                <td>42.87</td>
+                <td>71.58</td>
+                <td>77.28</td>
+                <td>77.82</td>
+                <td>83.75</td>
+                <td>84.69</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="country">Hong Kong, China</td>
+                <td>27.83</td>
+                <td>56.40</td>
+                <td>56.90</td>
+                <td>69.40</td>
+                <td>72.00</td>
+                <td>72.20</td>
+                <td>79.87</td>
+                <td>84.95</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="country">Hungary</td>
+                <td>7.00</td>
+                <td>27.74</td>
+                <td>38.97</td>
+                <td>62.00</td>
+                <td>65.00</td>
+                <td>68.02</td>
+                <td>75.65</td>
+                <td>72.83</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="country">Russian Federation</td>
+                <td>1.98</td>
+                <td>12.86</td>
+                <td>15.23</td>
+                <td>29.00</td>
+                <td>43.00</td>
+                <td>49.00</td>
+                <td>70.52</td>
+                <td>70.10</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="country">United States</td>
+                <td>43.08</td>
+                <td>64.76</td>
+                <td>67.97</td>
+                <td>71.00</td>
+                <td>71.69</td>
+                <td>69.73</td>
+                <td>73.00</td>
+                <td>74.45</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="country">Zimbabwe</td>
+                <td>0.40</td>
+                <td>2.10</td>
+                <td>2.40</td>
+                <td>4.00</td>
+                <td>6.40</td>
+                <td>8.40</td>
+                <td>16.30</td>
+                <td>16.36</td>
+            </tr>
+            <tr>
+                <th colspan="9">
+                    Tables in websites are used to organize and show information in a clean and readable way. They are
+                    super helpful when you need to organize and store a large amount of data.
+                </th>
+            </tr>
+        </table>
+    </main>
+
+</body>
+
+</html>
