@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale = 1">
+    <title> HTML tables </title>
+    <style>
+        body {
+            background-color: rgb(254, 197, 187);
+        }
+
+        table {
+            width: 70%;
+            margin: 10px auto;
+
+        }
+
+        table,
+        td,
+        th {
+            border: 2px solid rgb(0, 0, 0);
+            padding: 10px;
+
+
+
+            border: 2px solid rgb(0, 0, 0);
+            padding: 5px;
+            border-collapse: collapse;
+            border-radius: 20px;
+        }
+
+        th,
+        td {
+            background-color: rgba(75, 240, 175, .75);
+            border-color: rgb(220, 50, 70);
+
+        }
+
+        .thWidth {
+            width: 40%;
+        }
+
+        tr:nth-child(odd) {
+            background-color: red;
+        }
+
+        tr:nth-child(even) {
+            background-color: yellow;
+        }
+
+        table caption {
+            font-size: 2em;
+        }
+
+        th td {
+            border: dashed 10px green
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--tables: tabular data
+spreet sheet use tables, dont' use tables for layout
+columns and table row-->
+
+    <table>
+
+        <caption> This is my table</caption>
+        <thead>
+
+
+            <tr>
+                <td>
+                    <img src="../images/sulfur-cosmos-mexican-aster-flowers.jpg" alt="flowers" width="150">
+                </td>
+                <th colspan="5">Head of table</th>
+            </tr>
+        </thead>
+
+
+        <!--change the td for th that stands for thead-->
+        <tr>
+            <th rowspan="2" class="thWidth">Col 1</th>
+            <th>Col 2</th>
+            <th>Col 3</th>
+            <th>Col 4</th>
+            <th>Col 5</th>
+            <th>Col 6</th>
+        </tr>
+
+        <tr>
+            <th>Row 2 Col 1</th>
+            <td>Row 2 Col 2</td>
+            <td>Row 2Col 3</td>
+            <td>Row 2 Col 4</td>
+            <td>Row 2 Col 5</td>
+
+        </tr>
+
+        <tr>
+            <th>Row 3 Col 1</th>
+            <td>Row 3 Col 2</td>
+            <td>Row 3Col 3</td>
+            <td>Row 3 Col 4</td>
+            <td>Row 3 Col 5</td>
+            <td>Col 6</td>
+        </tr>
+
+        <tr>
+            <th>Row 3 Col 1</th>
+            <td>Row 3 Col 2</td>
+            <td>Row 3Col 3</td>
+            <td>Row 3 Col 4</td>
+            <td>Row 3 Col 5</td>
+            <td>Col 6</td>
+        </tr>
+
+        <tfoot>
+            <tr>
+                <td colspan="6"> &copy;2022 Me</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+</body>
+
+</html>
