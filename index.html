@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang = "en">
+<head>
+     <meta charset = "UTF-8">
+     <meta name =  "viewport"  content = "width-device-width, initial-scale = 1">   
+     <title> My index page </title>
+
+     <!--<link href ="" type = "text/css" rel = "stylesheet"> -->
+
+     <!--CSS style sheet could be externals with a link like the example above, or can be in the head tag. It divides into selector- declaration (property and value)-->
+     
+     <style>
+         body {background-color:peachpuff;}
+     h1 {color:red; 
+        font-size: 34px; 
+        text-align: center;}
+
+     p {background-color: rosybrown; 
+        padding: 10px 20px 10px 20px;
+    border-radius: 20px;}
+     /*this is a coment in CSS: the rule closest to the element takes precendece*/ 
+     
+     /*decendant selector used to specific targets */
+
+     article h1 {color:salmon;
+    font-size: 26px;
+text-align: left;}
+     
+
+/*group selector , to target multiple elements*/
+
+header,footer {background-color:skyblue;
+font-family: Helvetica;}
+     
+
+/*class selectors---to aply to whatever element I want to. always start with a dot or period . */
+.highlight {background-color: tan;}
+
+
+/* ID selector-- only one unique id per page */
+#whatevername {border: solid 5px black;
+width: 70%;
+/*margin: 10px auto 10px auto*/  /*right bottom left;*/
+margin: 10px auto;
+/*margin:20px;} */
+
+     </style>
+</head>
+
+<body>
+
+    <div id = "whatevername">
+
+<header>
+
+    <!-- <header id = "top"> for old browsers-->
+
+    <h1>my home page</h1>
+
+   <!--<a href = "Blablabla"></a> to refer a one part of the page--> 
+
+    <nav>
+<!--these are relative links-->
+        <ul>
+            <li> <a href = "index.html" > home </a> </li>
+            <li> 
+             <a href = "pages/page1.html" >  page 1 </a> </li>
+            <li> <a href = "pages/page2.html" >  page 2 </a></li>
+        </ul>
+        
+    </nav>
+</header>
+
+<main>
+    
+    <article> 
+        <h2>type of flowers</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu libero non eros faucibus ullamcorper non eget tellus. Quisque varius consectetur sem quis bibendum. Duis est felis, tincidunt vel nisl et, mattis interdum eros. Ut et lectus et dui aliquet molestie feugiat ut ex. Proin tristique cursus enim, ut scelerisque turpis fringilla in. Aliquam eu sem facilisis, pharetra tortor id, rutrum lectus. Praesent a nisl metus. In in lectus leo. Morbi sodales ornare diam vel dignissim. Suspendisse quis ipsum augue. Nulla fermentum, ex in tempus sollicitudin, augue sapien luctus ipsum, vitae bibendum diam dolor vitae sapien. Pellentesque viverra vel orci eu posuere. Fusce dui erat, blandit nec lorem quis, gravida fermentum metus. Aenean imperdiet eleifend sapien ullamcorper varius. Sed ut ipsum a odio molestie dictum eu vel purus. Nullam malesuada tincidunt orci, quis commodo turpis consectetur dignissim. <a href = "https://www.lipsum.com/" target = "blank" title = "links send you to  new wesbsite">There we go! </a>
+        </p>
+        <!--this link is an absolute link-->
+        <!--atributes for links: target = "blank"  to open in  a new window
+        title = "link leaves this website"-->
+    </article>
+
+    
+    <article> 
+        <h2>Blablabla</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu libero non eros faucibus ullamcorper non eget tellus. Quisque varius consectetur sem quis bibendum. Duis est felis, tincidunt vel nisl et, mattis interdum eros. Ut et lectus et dui aliquet molestie feugiat ut ex. Proin tristique cursus enim, ut scelerisque turpis fringilla in. Aliquam eu sem facilisis, pharetra tortor id, rutrum lectus. Praesent a nisl metus. In in lectus leo. Morbi sodales ornare diam vel dignissim. Suspendisse quis ipsum augue. Nulla fermentum, ex in tempus sollicitudin, augue sapien luctus ipsum, vitae bibendum diam dolor vitae sapien. Pellentesque viverra vel orci eu posuere. Fusce dui erat, blandit nec lorem quis, gravida fermentum metus. Aenean imperdiet eleifend sapien ullamcorper varius. Sed ut ipsum a odio <span class = "highlight">molestie dictum eu vel purus.</span> Nullam malesuada tincidunt orci, quis commodo turpis consectetur dignissim. <a href = "https://www.lipsum.com/" target = "blank" title = "links send you to  new wesbsite" class = "highlight">There we go! </a>
+        </p>
+        <!--this link is an absolute link-->
+        <!--atributes for links: target = "blank"  to open in  a new window
+        title = "link leaves this website"-->
+    </article>
+
+</main>
+
+<aside>
+    <h4 class = "highlight">sidebar</h4>
+</aside>
+
+<footer>
+    <section>
+<a href = "#top"> back to top</a>    <!--to come back to the top of the page-->
+    </section>
+</footer>
+
+</div>
+</body>
+
+</html>
