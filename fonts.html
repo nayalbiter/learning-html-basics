@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale = 1">
+    <title> Typography </title>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet". this is more work to do.>
+
+TO ADD THE FONT WITH A LINK-->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Sedgwick+Ave&display=swap');
+
+        /* @font-face{font-family: Pacifico;
+        src: url(../fonts/pacifico/Pacifico-Regular.ttf)}
+
+        use the font-family: pacifico
+        */
+
+        html {
+            font-size: 16px;
+            background-color: rgb(247, 37, 133);
+        }
+
+        body {
+
+            font-size: 1.5em;
+        }
+
+        /*or use 100% here*/
+
+
+        h1 {
+            font-family: 'Sedgwick Ave', 'cursive';
+            font-size: 5vw;
+            color: rgb(206, 209, 9)
+        }
+
+        h2 {
+            font-family: 'Sedgwick Ave', 'cursive';
+            font-size: 3vw;
+            color: rgb(206, 209, 9)
+        }
+
+        h3 {
+            font-family: 'Sedgwick Ave', 'cursive';
+            font-size: 3vw;
+            color: rgb(206, 209, 9)
+        }
+        /*responsive font size 1vw = 1% viewport width*/
+        /*vw= view port =10vw
+        5vw*/
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: .75em;
+            line-height: 18px;
+            font-style: italic;
+            font-weight: lighter;
+
+            /*shorthand:
+font: italic small-caps bold .75em/1.2em Arial, Helvetica, san-serif;*/
+
+        }
+
+        .sCaps {
+            font-variant: small-caps;
+        }
+
+
+        blockquote {
+            font-family: 'Cabin', 'sans-serif';
+            letter-spacing: 8px;
+
+        }
+    </style>
+</head>
+
+<!--one em unit equals 10px. 
+
+the font size for body usually is 16px.
+
+the higher the number, the higher the font, in font-weight
+hero is the photo aerea, like advertising internal aerea.
+span is like the div. 
+use only one id per page and many classes are needed-->
+
+
+<body>
+    <header>
+        <h1>Typography for the web</h1>
+        <h2>Manipulating fonts with CSS</h2>
+    </header>
+
+    <div id="hero">
+        <blockquote>
+            <span class="sCaps">Typography in web design is similar to print design but requires certain considerations
+                to ensure legibility</span>
+            on all screen types. Typeface, type size, color, line height, and letter shapes are some of the factors
+            within typography that must be carefully balanced to provide a pleasant reading experience.
+            <cite class="sCaps">Jordan Devos</cite>
+        </blockquote>
+    </div>
+
+    <main>
+
+       
+        <article>
+            <h3>Font Selection is important! </h3>
+            <p>Choosing a typeface can be done by virtually anyone—simply click a name in a dropdown list. And yet,
+                choosing
+                the right typeface is one of the most deliberated decisions of the design process.
+
+                Typography designers dedicate their careers to crafting letterforms. In those small shapes, experts
+                balance
+                things like emotion and neutrality, personality and practicality, legibility and flexibility. Selecting
+                a
+                typeface for a particular design comes with a long list of considerations.
+
+                Traditionally, graphic designers have always studied the fundamentals of typography in terms of print
+                design. But as the role of the designer now spans across all types of digital mediums, typography is a
+                bigger beast to tame. In the spirit of brushing up on the fundamentals, use the web typography tips
+                below
+                when selecting a typeface and formatting it for the best reading experience.</p>
+        </article>
+    </main>
+    <footer>
+
+        <p>&copy;2022 Me</p>
+        <address>
+            Someone <br>
+            1234 Some street <br>
+            Kirkland, WA 98052
+        </address>
+    </footer>
+
+</body>
+
+</html>
