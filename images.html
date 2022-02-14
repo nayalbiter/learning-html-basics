@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width-device-width, initial-scale = 1">
+     <title> HTML Images </title>
+</head>
+
+<body>
+
+     <h1>Images</h1>
+     <h2>inserting images</h2>
+
+     <!--use width to set an image or use width and heigth together. for an image only requiere the src and alt attributes. should add the width and the heigth, too-->
+
+     <img src="../images/tinyflower.jpg" alt="purple flower" style="width: 300" title="purple flower">
+
+
+
+     <img src="../images/helianthus-yellow-flower-pixabay_11863.jpg" alt="yellow flower" style="width: 400"
+          title="yellow flower">
+
+     <figure>
+          <!--put the image tag (alt and style) + the figcaption to describe the picture. -->
+
+          <img src="../images/flowers.jpg" alt="rouses" style="width: 300">
+
+          <figcaption>the rouses are beatiful</figcaption>
+     </figure>
+
+     <!--pictures with different sizes for different devices use the tag:-->
+
+     <picture>
+          <source media="(min-width: 650px)" srcset="../images/helianthus-yellow-flower-pixabay_11863">
+
+          <source media="(min-width: 450px)" srcset="../images/helianthus-yellow-flower-pixabay_11863">
+
+          <img src="../images/helianthus-yellow-flower-pixabay_11863.jpg" alt=yellow flower width="300">
+
+</body>
+
+</html>
