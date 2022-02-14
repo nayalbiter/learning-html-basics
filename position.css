@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: rgb(200, 240, 175);
+    margin: 0;
+    padding: 0;
+
+}
+
+header, footer, article {
+    background-color: rgb(175, 200, 245); 
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    height: 150px;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    position: sticky;
+    left: 0;
+    top: 100px;
+    z-index: 1000;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+header h1 {
+    background-color: rosybrown;
+    margin: 0;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    left:200px;
+    top: 20px;
+}
+
+header h2{
+    background-color: seagreen;
+    width: 400px;
+    position: relative;
+    right: -440px;
+    bottom: 0;
+}
+
+#hero {
+    background-color: salmon;
+    height: 300px;
+    position: relative;
+    margin-top: 150px;
+}
+
+blockquote{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    width: 400px;
+    border: solid 5px sienna;
+    border-radius: 15px -20px;
+    background-color: springgreen;
+    position: absolute;
+    bottom: 20;
+    right: 40;
+}
+
+main {
+    position: relative;
+    height: 400px;
+}
+
+main article {
+    width: 300px;
+    background-color: chocolate;
+    border: solid 2px rgb(171, 226, 43);
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+main aside {
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+
+}
