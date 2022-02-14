@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;  
+
+}
+
+body {
+    background-color: rgba(225, 255, 75, 1);
+    /*height: 100vh;*/
+    width: 100vw;
+    margin: 0;
+    display: flex;  /*the body element is the parent here*/
+    flex-direction: column;
+    border: solid;
+ 
+  
+}
+
+header{
+    background-color: rgb(144, 34, 207);
+    height: 15vh;
+    border: solid;
+
+}
+
+header h1 {
+    color: black;
+
+}
+
+nav {
+    background-color: rgb(250, 200, 150);
+    border: solid;
+
+}
+
+main {
+    background-color: rgb(222, 175, 250);
+    height: 100%;
+    display: flex;
+    border: solid;
+
+
+}
+
+article{
+    background-color: aqua;
+    flex: 2;
+    border: solid;
+    /*height: 100%;*/
+
+}
+
+aside{
+    background-color: aquamarine;
+    flex: 1;
+    border: solid;
+
+}
+
+footer{
+    background-color: rgb(202, 28, 135);
+
+    border: solid;
+   /* position: fixed;
+    bottom: 0;
+    width: 100vw;
+    margin-top: 100px;*/
+
+}
+
+/*style for cards*/
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    /*height: 100%;*/
+}
+
+.card{
+    flex: 0 0 200px;
+    margin: 10px;
+    border: solid 1px black;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .4);
+    
+}
+
+.card img {
+    max-width:100% ;
+}
+
+.card .text {
+    padding:20px;
+}
+
+.card button {
+    background-color: rgb(100, 100, 100);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 0;
+    width: 100%;
+
+}
+
+
+/*image and text sample*/
+.media {
+    display: flex;
+    align-items: flex-start;
+    padding: 5px;
+    border: solid 2px black;
+    max-width: 20em;
+}
+
+.picture {
+    margin-right: 1em;
+    order: 1;
+}
+
+.description{
+    flex: 1;
+}
+
+.descriptionHead{
+    margin: 0 0 .5em;
+}
